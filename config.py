@@ -1,11 +1,14 @@
 #! python3
 #!/usr/bin/env python
 
+...Load the Config ini file from your local Company VDI secured personal data persistence Drive
+These Configuration files are stored at "config_files" directory
+Once your OOT Password`s expired, please run "update_your_config_file.bat" in Company shared G: Drive...
+
+
 from configparser import ConfigParser as scp
 
-#Load the Config ini file from your local Company VDI secured personal data persistence Drive
-#These Configuration files are stored at "config_files" directory
-#Once your OOT Password`s expired, please run "update_your_config_file.bat" in Company shared G: Drive
+
 config = scp()
 cfg_file_location = '..\\config_files\\config.ini'
 config.read(cfg_file_location)
